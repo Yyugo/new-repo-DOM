@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+
+:root {
+	--origin-color: #222323;
+	--font-button-about-us: "PT Sans", sans-serif;
+	--yellow-color:	#FFFF00;
+	--white-color: #ffffff;
+	--font-logotype-top: 'Libre Baskerville', serif;
+	--font-about-us: 'Crimson Text', serif;
+	--font-quote: 'Noto Sans Mono', monospace;
+	--black-color: #000000;
+	--font-team: 'Saira', sans-serif;
+	--footer-color: rgba(255, 215, 0);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Nav Menu and Top Logotype */
+
+nav {
+	position: sticky;
+	width: 100%;
+	top: 0;
+	z-index: 1; 
+}
+
+nav ul {
+	list-style: none;
+	background-color: var(--origin-color);
+}
+
+nav > ul > li {
+	display: inline-flex;
+	justify-content: left;
+}
+
+nav ul::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 30px 20px;
+	text-decoration: none;
+	color: var(--white-color);
+	width: 100px;
+	font-size: 20px;
+	font-family: var(--font-button-about-us);
+}
+
+nav ul li a:hover {
+	background-color: var(--yellow-color);
+	color: var(--black-color);
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+.logotype__nav {
+	float: right;
+	width: 20%;
+	padding-right: 20px;
+}
+
+/* Banner TOP */
+
+
+.box-fkrukh {
+	background-image: url(/img/img/photo_team_header.jpeg);
+	width: 100%;
+	height: 900px;
+}
+
+.img-team-rukh {
+	padding: 590px 0px 0px 20px;
+	color: var(--yellow-color);
+	font-family: var(--logotype-top);
+	font-size: 20px;
+}
+
+.img-team-rukh p {
+	line-height: 2;
+}
+
+/* About FC Rukh Lviv */
+
+.container {
+	margin-top: 100px;
+}
+
+.container img {
+	float: left;
+	margin: 0 0 5em 20em;
+	width: 600px;
+	height: 700px;
+}
+
+.container > h2 {
+	position: relative;
+	padding-bottom: 25px;
+	text-align: center;
+	font-family: var(--font-about-us);
+}
+
+.container > p {
+	position: relative;
+	font-size: 21px;
+	padding-right: 40px;
+	padding-bottom: 15px;
+	text-align: center;
+	font-family: var(--font-about-us)
+}
+
+/* Button More About US */
+
+.container .button-more {
+	padding: 40px;
+	margin-top: -10px;
+	margin-left: 1300px;
+}
+
+.butt-more-about-us {
+	border: 2px solid var(--origin-color);
+	font-size: 15px;
+	color: var(--origin-color);
+	text-decoration: none;
+	width: 142px;
+	height: 47px;
+	display: block;
+	text-align: center;
+	line-height: 48px;
+	font-family: var(--font-button-about-us);
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.butt-more-about-us::before,
+.butt-more-about-us::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: var(--origin-color);
+	top: 0;
+	left: -100%;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.butt-more-about-us::after {
+	opacity: 1;
+	transition-delay: 0.2s;
+}
+
+.butt-more-about-us:hover {
+	color: var(--white-color);
+}
+
+.butt-more-about-us:hover::before,
+.butt-more-about-us:hover:after {
+	left: 0;
+	transition: 0.3s;
+}
+
+/* SLIDE WITH THE LAST VICTORY */
+
+.new-slide {
+	background-image:url(/img/img/photo-stadium.png);
+	width: 100%;
+	height: 720px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.last-game > h3 {
+	font-family: var(--font-logotype-top);
+	color: rgba(179, 174, 174, 0.842);
+	font-size: 40px;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.quote {
+	text-align: center;
+	font-family: var(--font-quote);
+	color:var(--yellow-color);
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.tabel-for-result {
+	width: 65%;
+	height: 450px;
+	background-color: var(--origin-color);
+	opacity: 0.9;
+	text-align: center;
+	margin-left: 350px;
+	margin-top: 30px;	
+}
+
+.team-rukh {
+	float: left;
+	padding: 120px 0 0 50px;
+	
+}
+
+.team-rukh > p {
+	color: var(--black-color);
+	font-family: var(--font-team);
+	font-size: 40px;
+}
+
+.team-mariupol {
+	float: right;
+	margin-top: -180px;
+	margin-right: 40px;
+	 
+}
+
+.team-mariupol > p {
+	color: var(--black-color);
+	font-family: var(--font-team);
+	font-size: 40px;
+	padding-right: 20px ;
+}
+
+.score p {
+	color: var(--white-color);
+	font-family: var(--font-team);
+	font-size: 50px;
+	padding: 170px 210px 50px 0;
+}
+
+/* FOOTER */
+
+footer {
+	background-color:var(--footer-color);
+	height: auto;
+	width: 100%;
+	font-family: var(--font-team);
+	color: var(--black-color);
+	/* margin-top: -100px; */
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-content h4 {
+	font-size: 2.2rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+} 
+
+.footer-nav {
+	margin-top: 10px;
+}
+
+.footer-nav a {
+	transition: 0.3s ease; 
+	border-top: 4px solid var(--footer-color);
+   border-bottom: 4px solid var(--footer-color);
+	padding: 10px 0;
+   margin: 0 40px;
+	font-weight: 600;
+	font-family: var(--font-team);
+	font-size: 17px;
+	text-decoration: none;
+	color: var(--black-color);
+	line-height: 50px;
+}
+
+.footer-nav a:hover {
+	border-top: 2px solid #ffffff;
+   border-bottom: 2px solid #ffffff;
+   padding: 5px 0;
+}
+
+ /* Socials */
+.socials {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+	margin: 0 30px;
+}
+
+.socials a {
+	color: var(--origin-color);
+  	background: var(--footer-color);
+  	border-radius:4px;
+  	text-align:center;
+  	text-decoration:none; 
+  	display: inline-block;
+  	width:40px;
+  	height:28px;
+  	padding-top:12px;
+  	margin:0 2px;
+  	-o-transition:all .5s;
+  	-webkit-transition: all .5s;
+  	-moz-transition: all .5s;
+  	transition: all .5s;
+}
+
+.socials a:hover {
+	background: var(--white-color);
+}
+
+.socials a i {
+	font-size: 20px;
+}
+
+.footer-boottom {
+	background: #000;
+	width: 100%; 
+	padding: 20px 0;
+	text-align: center;
+	color:red;
+}
+
+.footer-boottom p {
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.footer-boottom span {
+	text-transform: uppercase;
+	opacity: .9;
+	font-weight: 200;
+}
